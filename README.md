@@ -17,8 +17,7 @@ WebViewController()
   Di AndroidManifest.xml tambahkan:
   <uses-permission android:name="android.permission.CAMERA"/>
 
-Jika ingin Clone, hanya perlu fokus ke load index.html (seluruh kebutuhan AR dan VR berada di index.html) 
-WebViewController()
+Jika ingin clone, load seluruh folder WebBuild ke assets Flutter. index.html akan otomatis memanggil file-file yang dibutuhkan di dalam folder Build
   ..setJavaScriptMode(JavaScriptMode.unrestricted)
   ..setMediaPlaybackRequiresUserGesture(false)
   ..loadFlutterAsset('WebBuild/index.html');
